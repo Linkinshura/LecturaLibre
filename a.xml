@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Diagrama Caja Clientes">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Inicio -->
+        <mxCell id="2" value="Inicio" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Inicialización -->
+        <mxCell id="3" value="cajaInicial, ingresos, egresos, cajaTotal, contadorClientes=0&#xa;carga=1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="100" width="300" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Decision carga -->
+        <mxCell id="4" value="carga = 1" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="200" width="120" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Entrada cliente -->
+        <mxCell id="5" value="Nombre, Apellido&#xa;esSocio (1/0)" style="shape=parallelogram;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="320" width="220" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Contador -->
+        <mxCell id="6" value="contadorClientes = contadorClientes + 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="420" width="260" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Socio -->
+        <mxCell id="7" value="esSocio = 1" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="500" width="120" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Acepta descuento -->
+        <mxCell id="8" value="aceptaDesc = 1" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="620" width="120" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Aplicar descuento -->
+        <mxCell id="9" value="totalCompra = totalCompra * 0.9" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="720" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Reclamo -->
+        <mxCell id="10" value="N°Compra, Producto, Total" style="shape=parallelogram;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="800" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Metodo pago -->
+        <mxCell id="11" value="MetodoPago (0=Debito,1=QR,2=Otro)" style="shape=parallelogram;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="880" width="260" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Debito -->
+        <mxCell id="12" value="metodoPago = 0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="960" width="120" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Reintegro total -->
+        <mxCell id="13" value="reintegro = totalCompra" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1060" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- QR -->
+        <mxCell id="14" value="metodoPago = 1" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1060" width="120" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Reintegro 20 -->
+        <mxCell id="15" value="reintegro = totalCompra * 0.2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1160" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Sin reintegro -->
+        <mxCell id="16" value="reintegro = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1160" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Caja -->
+        <mxCell id="17" value="ingresos += totalCompra&#xa;egresos += reintegro&#xa;cajaTotal = cajaInicial + ingresos - egresos" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1260" width="300" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Mostrar -->
+        <mxCell id="18" value="Mostrar datos cliente y caja" style="shape=parallelogram;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1380" width="260" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Pregunta -->
+        <mxCell id="19" value="¿Otro cliente? carga (1/0)" style="shape=parallelogram;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1460" width="260" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Fin -->
+        <mxCell id="20" value="Fin" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1560" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
